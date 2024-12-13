@@ -49,8 +49,8 @@ public class WorkDate {
     static List<String> removeBlank(String[] elements) {
         List<String> names = new ArrayList<>();
         for (String element : elements) {
-            String strippedElement = element.strip();
-            names.add(strippedElement);
+            String trimmedElement = element.trim();
+            names.add(trimmedElement);
         }
         return names;
     }
