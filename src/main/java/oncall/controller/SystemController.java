@@ -5,13 +5,14 @@ import java.util.List;
 import oncall.domain.WorkDate;
 import oncall.domain.Worker;
 import oncall.view.InputView;
+import oncall.view.OutputView;
 
 public class SystemController {
     public void run(){
         WorkDate workDate = inputPurchasePrice();
         List<Worker> worker = inputWorker();
+        OutputView.displayOnCall(workDate.getWorkDateAboutMonth(), workDate.getWorkDateAboutWeek());
     }
-
     private WorkDate inputPurchasePrice() {
         while (true) {
             try {

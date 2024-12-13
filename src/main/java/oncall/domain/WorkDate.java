@@ -54,4 +54,16 @@ public class WorkDate {
         }
         return names;
     }
+    public static Integer transMonthtoInt(String month) {
+        return Integer.parseInt(month);
+    }
+    public ArrayList<String> getWorkDateAboutInput() {
+        return workDateAboutInput;
+    }
+    public static String getWorkDateAboutMonth() {
+        return workDateAboutInput.getFirst();
+    }
+    public static String getWorkDateAboutWeek() {
+        return workDateAboutInput.getLast();
+    }
 }
